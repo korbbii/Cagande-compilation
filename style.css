@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    animation: colorChange 5s infinite;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 2.5rem;
+    background-color: black;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 300px;
+    background-color: gray;
+    color: white;
+    transition: padding-top 0.3s;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    transition: font-size 0.3s;
+    margin-left: 44rem;
+    text-align: left;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    transition: font-size 0.3s;
+    margin-left: 44rem;
+    text-align: left;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: 43.4rem;
+    transition: margin-left 0.3s;
+}
+
+@keyframes colorChange {
+    0% { background-color: #241f1f; }
+    50% { background-color: #1b0606; }
+    100% { background-color: #000000; }
+}
+
+header:hover {
+    background-color: #333;
+}
+
+header ul li a:hover {
+    transform: translateY(-2px);
+}
+
+.main:hover {
+    padding-top: 320px;
+}
+
+h1:hover, h2:hover {
+    font-size: 3.5rem;
+}
+
+h3:hover {
+    margin-left: 40rem;
+}
