@@ -19,7 +19,7 @@ let obj2 = {
     image   : "porschee.jpg",
     desc    : "Stare The Beauty of Porsche 911 GT3 RS",
     button1 : "learn more",
-    title2  : "MOVIES"
+    title2  : "PORSCHE"
 }
 
 const { image, desc, button1, title2 } = obj2
